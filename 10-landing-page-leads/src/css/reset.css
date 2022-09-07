@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: #FAEBD7;
+}
+
+@font-face {
+    font-family: 'Cookie';
+    src: url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+}

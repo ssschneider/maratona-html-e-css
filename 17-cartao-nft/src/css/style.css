@@ -1,0 +1,138 @@
+body {
+    background: url('../images/background-desktop.png') center center no-repeat;
+}
+
+main section.card {
+    width: 400px;
+    margin: 30px auto 0;
+    backdrop-filter: blur(9px) saturate(180%);
+    -webkit-backdrop-filter: blur(9px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: wobble 2s ease-in-out 0s infinite normal both;
+}
+
+@keyframes wobble {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-20px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+main section.card:hover {
+    animation: none;
+}
+
+main section.card div.image img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-bottom: 10px;
+}
+
+main section.card div.info {
+    padding: 0 10px;
+}
+
+main section.card div.info h1 {
+    font-size: 2.5rem;
+    padding: 5px 0;
+    font-family: 'Press Start 2P', serif;
+    transition: 0.8s ease-in-out;
+}
+
+main section.card div.info h1:hover {
+    color: #E30F76;
+    cursor: pointer;
+}
+
+main section.card div.info p {
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
+main section.card div.info div.selling-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.card div.info div.selling-info div.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.card div.info div.selling-info div.price i {
+    padding-right: 5px;
+    font-size: 1.8rem;
+    color: #f7931a;
+}
+
+main section.card div.info div.selling-info div.price h3 {
+    font-size: 1.5rem;
+    color: #f7931a;
+    font-weight: 100;
+}
+
+main section.card div.info div.selling-info div.time-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.card div.info div.selling-info div.time-left i {
+    padding-right: 5px;
+    font-size: 1.4rem;
+}
+
+main section.card div.info div.selling-info div.time-left p {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+main section.card div.author {
+    display: flex;
+    border-top: 0.5px solid #E30F76;
+    margin: 10px 20px;
+    padding-top: 5px;
+}
+
+main section.card div.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+main section.card div.author p {
+    align-self: center;
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+main section.card div.author a {
+    font-size: 2rem;
+    color: #E30F76;
+    cursor: pointer;
+}

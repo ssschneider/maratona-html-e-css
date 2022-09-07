@@ -1,0 +1,53 @@
+@media (max-width: 425px) {
+    header h1 {
+        margin: 50px 0;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    main {
+        padding-bottom: 50px;
+    }
+
+    main section.container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+
+    main section.container div.items {
+        display: none;
+    }
+
+    main section.container div.plan1 div.plan-title, main section.container div.plan2 div.plan-title, main section.container div.plan3 div.plan-title {
+        border-radius: 20px 20px 0 0;
+    }
+    
+    main section.container div.plan1 ul li i::after, main section.container div.plan2 ul li i::after, main section.container div.plan3 ul li i::after {
+        content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.";
+        color: #070707;
+        font-size: 1.5rem;
+        font-family: 'Anek Telugu', sans-serif;
+        padding: 0 5px;
+        font-weight: 300;
+    }
+
+    main section.container div.plan1 div.plan-title h2, main section.container div.plan2 div.plan-title h2, main section.container div.plan3 div.plan-title h2 {
+        font-size: 4rem;
+    }
+
+    main section.container div.plan1 div.plan-title p, main section.container div.plan2 div.plan-title p, main section.container div.plan3 div.plan-title p {
+        font-size: 2.5rem;
+    }
+
+    main section.container div.plan1 ul li a, main section.container div.plan2 ul li a, main section.container div.plan3 ul li a {
+        font-size: 3.5rem;
+        padding: 10px 65px;
+        line-height: 6rem;
+    }
+
+    main section.container div.plan3 ul li:last-child {
+        margin-bottom: 5px;
+    }
+}

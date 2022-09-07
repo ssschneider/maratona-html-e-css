@@ -1,0 +1,27 @@
+@media (max-width: 425px) {
+    body {
+        height: 100vh;
+    }
+
+    main div.section-header {
+        display: flex;
+        margin: 20px 80px;
+    }
+
+    main div.section-header h1 {
+        font-size: 3rem;
+    }
+
+    main div.content {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    main div.content h2 {
+        font-size: 5rem;
+    }
+
+    main div.content form {
+        padding: 15px 0px;
+    }
+}

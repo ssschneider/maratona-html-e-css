@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-weight: 300;
+    font-family: 'Anek Telugu', sans-serif;
+    list-style: none;
+    color: #070707;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Anek Telugu';
+    src: url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;500;600&display=swap');
+}

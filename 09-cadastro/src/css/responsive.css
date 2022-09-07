@@ -1,0 +1,41 @@
+@media (max-width: 425px) {
+    header {
+        margin: 30px auto;
+    }
+    
+    main h2 {
+        font-size: 4rem;
+        margin: 50px;
+    }
+
+    main form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 320px;
+        height: fit-content;
+        margin: 20px auto;
+        padding: 30px 25px;
+        row-gap: 20px;
+    }
+
+    main form div.personal-data input, main form div.login-data input {
+        width: min-content;
+    }
+
+    input[type='file'] {
+            color: rgba(0, 0, 0, 0);
+            width: 300px;
+    }
+
+    main form div.login-data label.accept-terms, main form div.login-data label.accept-terms a, main form div.login-data label.newsletter {
+        max-width: 300px;
+    }
+
+    main form input.submit {
+        width: fit-content;
+        height: fit-content;
+        padding: 15px auto;
+        margin: 0 15%;
+    }
+}

@@ -1,0 +1,75 @@
+header {
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+main h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+main form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #f0dabe;
+    border-radius: 20px;
+    padding: 30px 50px;
+    column-gap: 20px;
+}
+
+main form div.personal-data, main form div.login-data {
+    display: flex;
+    flex-direction: column;
+}
+
+main form div.personal-data h3, main form div.login-data h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+main form div.personal-data label, main form div.login-data label {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+main form div.personal-data input, main form div.login-data input {
+    font-size: 2rem;
+    font-weight: 1, 300;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0px solid #070707;
+}
+
+main form div.login-data label.accept-terms, main form div.login-data label.accept-terms a, main form div.login-data label.newsletter {
+    font-size: 1.6rem;
+}
+
+main form div.login-data div.terms, main form div.login-data div.newsletter-enabler {
+    padding-top: 10px;
+    display: flex;
+}
+
+main form input.submit {
+    font-size: 2rem;
+    border-radius: 30px;
+    border: 0px solid #070707;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    background-color: #070707;
+    color: #f0dabe;
+    transition: 0.6s ease-in-out;
+}
+
+main form input.submit:hover {
+    color: #070707;
+    background-color: #f0dabe;
+    border: 1px solid #070707;
+}

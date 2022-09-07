@@ -1,0 +1,108 @@
+body {
+    background-color: #d6d5d5c0;
+    scroll-behavior: smooth;
+}
+
+section.hero {
+    background: url(../images/hero-grande.png) center bottom fixed;
+    width: 100%;
+    height: 95vh;
+    font-family: 'Rye', cursive;
+    text-align: center;
+}
+
+section.hero h1 {
+    font-size: 6rem;
+    padding: 100px 0 20px ;
+}
+
+section.hero h2 {
+    font-size: 2.5rem;
+}
+
+section.about {
+    padding: 100px 0 0 0;
+}
+
+section.about p {
+    text-align: justify;
+    width: 75%;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+section.about p, section.contact, section.contact label, section.contact input, section.contact textarea {
+    font-family: 'Playfair Display', serif;
+}
+
+section.contact {
+    border-top: 1px solid;
+}
+
+section.contact h2 {
+    font-family: 'Rye', cursive;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+section.contact label, section.contact input, section.contact textarea {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+section.contact label {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+section.contact input, section.contact textarea {
+    border-radius: 15px;
+    border: 1px;
+    padding: 5px;
+}
+
+section.contact input#submit {
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+section.contact input#submit:hover {
+    opacity: 0.9;
+    transition: 0.5s ease-in-out;
+    background-color: #000;
+    color: #d6d5d5c0;
+    cursor: pointer;
+}
+
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.footer a img {
+    width: 100px;
+    height: 80px;
+    padding-bottom: 20px;
+}
+
+footer.footer div.social ul{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+footer.footer div.social ul li a{
+    font-size: 5rem;
+    padding: 20px 20px;
+    transition: 0.2s ease-in-out;
+}
+
+footer.footer div.social ul li a:hover {
+    opacity: 0.7;
+}

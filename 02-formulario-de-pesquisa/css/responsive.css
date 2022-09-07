@@ -1,0 +1,25 @@
+@media (min-width: 1000px) {
+    .form h1 {
+        font-weight: 600;
+        font-size: 4rem;
+        margin: 50px;
+        text-align: center;
+    }
+
+    .form label {
+        font-size: 2.5rem;
+        margin: 50px auto 20px auto;
+        width: 500px;
+        text-align: center;
+    }
+
+    .form input, .form select, .form textarea {
+        font-size: 2.3rem;
+        width: 300px;
+    }
+
+    .form textarea {
+        width: 470px;
+        height: 270px;
+    }
+}

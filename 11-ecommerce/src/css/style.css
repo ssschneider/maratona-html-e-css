@@ -1,0 +1,315 @@
+body {
+    background-color: #FAFAFA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #0d0210ee;
+}
+
+header div.basic-info {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: 0 30px;
+}
+
+header div.basic-info div.delivery, header div.basic-info div.shipping, header div.basic-info div.costumer-service {
+    display: flex;
+    width: 300px;
+}
+
+header div.basic-info div.delivery i, header div.basic-info div.delivery div.delivery-info h3, header div.basic-info div.delivery div.delivery-info p, header div.basic-info div.shipping i, header div.basic-info div.shipping div.shipping-info h3, header div.basic-info div.shipping div.shipping-info p, header div.basic-info div.costumer-service i, header div.basic-info div.costumer-service div.costumer-service-info h3, header div.basic-info div.costumer-service div.costumer-service-info p {
+    color:#FAFAFA;
+}
+
+header div.basic-info div.delivery i, header div.basic-info div.shipping i, header div.basic-info div.costumer-service i {
+    font-size: 2rem;
+    border: 1px solid #FAFAFA;
+    border-radius: 50px;
+    padding: 10px;
+    align-self: center;
+}
+
+header div.basic-info div.delivery div.delivery-info h3, header div.basic-info div.shipping div.shipping-info h3, header div.basic-info div.costumer-service div.costumer-service-info h3 {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+header div.basic-info div.delivery div.delivery-info p, header div.basic-info div.shipping div.shipping-info p,  header div.basic-info div.costumer-service div.costumer-service-info p {
+    font-size: 1.2rem;
+    width: 60%;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+header div.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    text-align: center;
+}
+
+header div.btns a.register, header div.btns a.login {
+    font-size: 2rem;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 20px;
+    line-height: 7rem;
+    transition: 0.8s ease-in-out;
+}
+
+header div.btns a.login i {
+    font-size: 1.8rem;
+    color: #FAFAFA;
+    padding-right: 5px;
+    transition: 0.8s ease-in-out;
+}
+
+header div.btns a.login {
+    border: 1px solid #FAFAFA;
+    color: #FAFAFA;
+}
+
+header div.btns a.register {
+    background-color: #FAFAFA;
+    border: 1px solid #0d0210ee;
+    color: #0d0210ee;
+}
+
+header div.btns a.register:hover {
+    opacity: 0.8;
+}
+
+header div.btns a.login:hover {
+    background-color: #FAFAFA;
+    border: 1px solid #0d0210ee;
+    color: #0d0210ee;
+    opacity: 0.8;
+}
+
+header div.btns a.login i:hover {
+    color: #0d0210ee;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(5, fit-content);
+}
+
+main section.hero {
+    background: url('../images/hero.png') center center no-repeat;
+    height: 64vh;
+}
+
+main section.hero details {
+    text-align: center;
+    padding-top: 50px;
+}
+
+main section.hero details summary {
+    font-size: 5rem;
+    color: #FAFAFA;
+    padding-bottom: 10px;
+}
+
+
+main section.hero details summary:hover {
+    cursor: pointer;
+}
+
+main section.hero details p a {
+    color: #0d0210ee;
+    background-color: #FAFAFA;
+    font-size: 2.5rem;
+    padding: 10px 100px;
+    line-height: 6rem;
+    transition: 0.5s ease-in-out;
+}
+
+main section.hero details p a:hover {
+    border-radius: 20px;
+}
+
+main section.on-sale h2, main section.red-wine h2, main section.pink-wine h2 {
+    font-size: 4rem;
+    margin: 50px 80px;
+}
+
+main section.on-sale div.container, main section.red-wine div.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    margin: 0 80px;
+    height: fit-content;
+    border-radius: 20px;
+    padding-bottom: 80px;
+}
+
+main section.on-sale div.container div.card, main section.red-wine div.container div.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 0px solid #0d0210ee;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: 0.3s ease-in-out;
+}
+
+main section.on-sale div.container div.card:hover, main section.red-wine div.container div.card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+main section.on-sale div.container div.card div.product img, main section.red-wine div.container div.card div.product img {
+    scale: 0.7;
+}
+
+main section.on-sale div.container div.card div.product-info h3, main section.red-wine div.container div.card div.product-info h3 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+main section.on-sale div.container div.card div.product-info strong, main section.on-sale div.container div.card div.product-info s, main section.red-wine div.container div.card div.product-info strong {
+    font-size: 2rem;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+main section.on-sale div.container div.card div.product-info strong {
+    color: #FF0000;
+}
+
+main section.red-wine div.container div.card div.product-info strong {
+    font-weight: 500;
+}
+
+main section.on-sale div.container div.card div.product-info s {
+    color: #b9b9b9;
+    font-weight: 200;
+}
+
+main section.on-sale div.container div.card div.add-to-cart, main section.red-wine div.container div.card div.add-to-cart {
+    display: flex;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #FAFAFA;
+    background-color: #0d0210ee;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.8s ease-in-out;
+}
+
+main section.on-sale div.container div.card div.add-to-cart i, main section.red-wine div.container div.card div.add-to-cart i {
+    font-size: 2rem;
+    padding-right: 10px;
+    color: #FAFAFA;
+}
+
+main section.on-sale div.container div.card div.add-to-cart p, main section.red-wine div.container div.card div.add-to-cart p {
+    font-size: 1.8rem;
+    color: #FAFAFA;
+}
+
+main section.on-sale div.container div.card div.add-to-cart:hover, main section.red-wine div.container div.card div.add-to-cart:hover {
+    cursor: pointer;
+    opacity: 0.95;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 1px solid #0d0210ee;
+}
+
+footer {
+    background: url('../images/footer.jpg') center top no-repeat;
+    height: 90vh;
+}
+
+footer div.footer-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    margin: 50px 80px 10px;
+    padding: 50px 0px;
+}
+
+footer div.footer-header div.general-info h3, footer div.footer-header div.services h3, footer div.footer-header div.other-services h3, footer div.footer-header div.account h3, footer div.further-info div.contact h3, footer div.newsletter h3 {
+    color: #FAFAFA;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+footer div.footer-header div.general-info ul li, footer div.footer-header div.services ul li, footer div.footer-header div.general-info ul li, footer div.footer-header div.other-services ul li, footer div.footer-header div.account ul li {
+    color: #FAFAFA;
+    font-size: 1.8rem;
+    list-style: none;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+footer div.further-info {
+    display: flex;
+    margin: 10px 80px 0;
+    padding: 30px 0px 10px;
+    justify-content: space-between;
+}
+
+footer div.further-info div.contact div.city, footer div.further-info div.contact div.phone, footer div.further-info div.contact div.email {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+footer div.further-info div.contact div.city i, footer div.further-info div.contact div.city p, footer div.further-info div.contact div.phone i, footer div.further-info div.contact div.phone p, footer div.further-info div.contact div.email i, footer div.further-info div.contact div.email p {
+    color: #FAFAFA;
+    align-self: center;
+}
+
+footer div.further-info div.contact div.city i, footer div.further-info div.contact div.phone i, footer div.further-info div.contact div.email i {
+    font-size: 2rem;
+    border: 1px solid #FAFAFA;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+footer div.further-info div.contact div.city p, footer div.further-info div.contact div.phone p, footer div.further-info div.contact div.email p {
+    font-size: 1.8rem;
+}
+
+footer div.newsletter {
+    margin-left: 390px;
+}
+
+footer div.newsletter p{
+    font-size: 1.8rem;
+    color: #FAFAFA;
+    width: 70%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+footer div.newsletter form input{
+    font-size: 2rem;
+    padding: 10px;
+    border: 0px solid #0d0210ee;
+}
+
+footer div.newsletter form input#email {
+    margin: 5px 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: text;
+    background-color: #FAFAFA;
+    color: #0d0210ee;
+}
+
+footer div.newsletter form input#submit {
+    margin: 5px 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #FAFAFA;
+    background-color: #0d0210ee;
+    transition: 0.8s ease-in-out;
+}

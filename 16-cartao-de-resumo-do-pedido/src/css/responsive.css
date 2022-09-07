@@ -1,0 +1,36 @@
+@media (max-width: 425px) {
+    main section.container header img {
+        width: 300px;
+    }
+
+    main section.container div.info {
+        width: 300px;
+    }
+
+    main section.container div.info h1 {
+        padding: 10px 30px;
+        font-size: 3.5rem;
+    }
+
+    main section.container div.info div.product {
+        column-gap: 10px;
+        width: 200px;
+    }
+
+    main section.container div.info div.product i {
+        font-size: 2rem;
+        padding:  10px 5px;
+    }
+
+    main section.container div.info div.product div.product-info h2 {
+        font-size: 1.5rem;
+    }
+
+    main section.container div.info div.product div.product-info h5 {
+        font-size: 0.8rem;
+    }
+
+    main section.container a#pay {
+        padding: 10px 100px;
+    }
+}

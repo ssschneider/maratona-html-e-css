@@ -1,0 +1,39 @@
+@media (max-width: 570px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.info {
+        padding: 20px 0 80px;
+    }
+
+    main section.info form div.data {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+    }
+
+    main section.info form div.data input {
+        margin: 10px 0 20px;
+    }
+
+    main section.info form div.data div.file-type {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 425px) {
+    @keyframes bounce {
+        50% {transform: translateY(-10px);}
+    }
+
+    main section.info h1 {
+        font-size: 5rem;
+    }
+
+    main section.info p, main section.info form {
+        padding: 20px;
+    }
+}

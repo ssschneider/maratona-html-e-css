@@ -1,0 +1,28 @@
+@media (max-width: 425px) {
+    body main div.text h1 {
+        font-size: 4rem;
+        padding: 30px 0;
+    }
+
+    body main div.text p {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    body main div.text div.coupon p {
+        font-size: 1.4rem;
+    }
+
+    body main div.text div.coupon h3 {
+        font-size: 1.8rem;
+    }
+
+    body main div.btn-home {
+        padding: 10px 15px;
+    }
+
+    body main div.btn-home a i, body main div.btn-home a p {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}

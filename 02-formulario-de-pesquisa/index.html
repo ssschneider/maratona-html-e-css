@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your experience</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <main>
+        <form action="/" method="post" class="form">
+            <h1>Tell us about your experience!</h1>
+
+            <label for="name">What's Your Name?</label>
+            <input type="text" name="name" id="name" placeholder="Jane Doe Smith" required>
+
+            <label for="birthdate">When You Were Born?</label>
+            <input type="date" name="birthdate" id="birthdate" placeholder="dd/mm/yyyy">
+
+            <label for="email">What's your email?</label>
+            <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
+
+            <label for="from">Where are you from?</label>
+            <select name="from" id="from" required>
+                <option value=" ">Choose a region</option>
+                <option value="north-america">North America</option>
+                <option value="central-america">Central America</option>
+                <option value="south-america">South America</option>
+                <option value="europe">Europe</option>
+                <option value="africa">africa</option>
+                <option value="asia">Asia</option>
+                <option value="oceania">Oceania</option>
+            </select>
+
+            <label for="problem" class="problem">Have we solved your problem?</label>
+
+                <label for="yes">Yes</label>
+                <input type="radio" name="problem" id="yes" value="Yes" class="problem">
+                <label for="no">No</label>
+                <input type="radio" name="problem" id="problem" placeholder="No" class="problem">
+
+            <label for="recommendation">In a scale from 1 to 10, how likely you are to recommend our services?</label>
+            <input type="range" name="recommendation" id="recommendation" min="1" max="10">
+
+            <label for="suggestions">We love to hear from our clients! Do you have any suggestions for us?</label>
+            <textarea name="suggestions" id="suggestions" cols="20" rows="10"></textarea>
+
+            <input type="submit" value="Send" id="submit">
+        </form>
+    </main>
+</body>
+</html>

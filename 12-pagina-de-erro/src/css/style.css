@@ -1,0 +1,77 @@
+body {
+    background-color: #070707;
+}
+
+body main div.text {
+    margin: 70px auto;
+    text-align: center;
+}
+
+body main div.text h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8rem;
+    padding-bottom: 30px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+body main div.text p {
+    font-size: 3rem;
+    font-family: 'Graduate', cursive;
+    width: 60%;
+    margin: 0 auto;
+}
+
+body main div.text div.coupon p {
+    font-size: 1.6rem;
+    font-family: 'Graduate', cursive;
+    padding: 50px 0 30px;
+}
+
+body main div.text div.coupon h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fafafa;
+    border-radius: 50px;
+    width: fit-content;
+    text-align: center;
+    transition: 0.7s ease-in-out;
+}
+
+body main div.text div.coupon h3:hover {
+    background-color: #fafafa;
+    color: #070707;
+}
+
+body main div.text div.coupon h3::selection {
+    background-color: #f23e02;
+}
+
+body main div.btn-home {
+    background-color: #f23e02;
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    width: fit-content;
+    transition: 0.9s ease-in-out;
+}
+
+body main div.btn-home a {
+    display: flex;
+}
+
+body main div.btn-home a i, body main div.btn-home a p {
+    font-size: 2rem;
+    padding: 5px;
+}
+
+body main div.btn-home:hover {
+    border-radius: 0px;
+}

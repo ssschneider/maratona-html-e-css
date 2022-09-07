@@ -1,0 +1,179 @@
+@media (max-width: 768px) {
+    header nav ul li i {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    @keyframes bounce {
+        0% {transform: translateY(0);}
+        50% {transform: translateY(-20px);}
+        100% {transform: translateY(0);}
+    }
+   
+    header nav ul li p {
+        font-size: 1.2rem;
+        font-family: 'Press Start 2P', sans-serif;
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: repeat(2, fit-content);
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    main section.post {
+        width: fit-content;
+    }
+
+    main section.aside {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+        padding-bottom: 20px;
+    }
+
+    main section.aside section.related-posts h3 {
+        font-size: 2rem;
+        padding: 20px;
+        margin-bottom: 5px;
+    }
+
+    main section.aside section.related-posts ol li a {
+        display: flex;
+        padding: 13px 0;
+    }
+
+    main section.aside section.related-posts ol li img {
+        width: 90px;
+        height: 90px;
+    }
+
+    main section.aside section.related-posts ol li h4 {
+        font-size: 1.8rem;
+    }
+
+    main section.aside section.related-posts div.posts-info p {
+        font-size: 1.3rem;
+        width: 90%;
+        margin: 10px 20px 0;
+    }
+
+    main section.aside section.authors-profile {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        place-items: center;
+    }
+
+    main section.aside section.authors-profile div.profile img {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        margin: 50px 0 20px;
+    }
+
+    main section.aside section.authors-profile div.profile div.authors-social i {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    main section.aside section.authors-profile div.profile div.authors-social i:hover {
+        border-radius: 30px;
+    }
+
+    main section.aside section.authors-profile div.profile-info {
+        margin: 0;
+        text-align: center;
+    }
+
+    main section.aside section.authors-profile div.profile-info h3 {
+        font-size: 3rem;
+    }   
+
+    main section.aside section.authors-profile div.profile-info p {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header nav ul {
+        display: grid;
+        margin: 100px auto 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 15px;
+    }
+
+    header nav ul li i {
+        font-size: 3rem;
+    }
+
+    header nav ul li p {
+        font-size: 0.8rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, fit-content);
+        margin: 80px 10px 0px;
+        row-gap: 50px;
+        height: min-content;
+    }
+
+    main section.post {
+        width: 1fr;
+    }
+
+    main section.post h2 {
+        font-size: 3rem;
+    }
+
+    main section.post h3 {
+        font-size: 1.3rem;
+    }
+
+    main section.post p {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    main section.aside {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    main section.aside section.authors-profile div.profile img {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        margin: 50px 0 20px;
+    }
+
+    main section.aside section.authors-profile div.profile div.authors-social i {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+
+    main section.aside section.authors-profile div.profile div.authors-social i:hover {
+        border-radius: 30px;
+    }
+
+    main section.aside section.authors-profile div.profile-info h3 {
+        font-size: 2.5rem;
+    }   
+
+    main section.aside section.authors-profile div.profile-info p {
+        font-size: 1.8rem;
+    }
+}

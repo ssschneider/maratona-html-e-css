@@ -1,0 +1,80 @@
+@media (min-width: 426px) and (max-width:768px) {
+    body {
+        background: url('../images/background-grande.jpg') center top no-repeat;
+        height: 100vh;
+    }
+
+    main {
+    text-align: center;
+    align-items: center;
+    margin: 30px auto;
+    }
+
+    main h2 {
+        font-size: 5rem;
+        margin-bottom: 40px;
+    }
+
+    main p {
+        font-size: 2.5rem;
+        width: 75%;
+    }
+
+    main a {
+            font-size: 2.4rem;
+            padding: 15px;
+            margin-bottom: 50px;
+    }
+
+    footer div.social ul {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    footer div.social ul li a {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        background: url('../images/background-grande.jpg') center bottom no-repeat;
+        height: 100vh;
+        background-color: #0B0B0B;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    header img.logo{
+        margin: 40px auto;
+    }
+
+    main {
+        margin: 50px;
+        align-items: center;
+    }
+
+    main h2, main span {
+        font-size: 4rem;
+        margin-bottom: 60px;
+        text-align: center;
+        width: 50%;
+    }
+
+    main p {
+        font-size: 2rem;
+        text-align: center;
+        width: 75%;
+    }
+
+    footer div.social ul {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    footer div.social ul li a {
+        font-size: 3.5rem;
+    }
+}

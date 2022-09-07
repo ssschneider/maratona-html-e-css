@@ -1,0 +1,88 @@
+body {
+    background-color: #c8a2c8ce;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin: 60px auto 0px;
+    text-align: center;
+}
+
+main section.info {
+    margin: 0 50px;
+}
+
+main section.info h1 {
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+}
+
+main section.info p {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+main section.info form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+main section.info form div.data {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.info form div.data input {
+    font-size: 1.3rem;
+    border-radius: 50px;
+    padding: 10px;
+    border: 0px solid #fafafa;
+}
+
+main section.info form div.data div.file-type {
+    display: flex;
+}
+
+main section.info form div.data div.file-type label {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+main section.info form div.data div.file-type label:hover, main section.info form div.data div.file-type input:hover {
+    cursor: pointer;
+}
+
+main section.info form input#submit {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0px;
+    transition: 0.8s ease-in-out;
+    background-color: #fafafa;
+}
+
+main section.info form input#submit:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #f5f5dc;
+}
+
+main section.product img {
+    animation: bounce 1s ease-in-out 0s infinite normal forwards;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0px);}
+}

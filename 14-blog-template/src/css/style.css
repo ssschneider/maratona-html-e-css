@@ -1,0 +1,209 @@
+body {
+    background: url('../images/hero.png') center center fixed;
+}
+
+header {
+    height:70vh;
+}
+
+header h1, header nav ul li a i, header nav ul li a p {
+    color: #fafafa;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 200px;  
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 180px auto 0;
+    text-align: center;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li i {
+    margin: 10px;
+    padding: 30px;
+    font-size: 4rem;
+}
+
+header nav ul li i:hover {
+    animation: bounce infinite 1s;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(0);}
+}
+
+header nav ul li p {
+    font-size: 2rem;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px 50px 0px;
+    column-gap: 50px;
+    height: min-content;
+}
+
+main section.post, main section.aside section.related-posts, main section.aside section.authors-profile {
+    width: fit-content;
+    background: rgba(214, 211, 211, 0.438);
+    border-radius: 20px;
+    height: fit-content;
+    transition: 0.8s ease-in-out;
+}
+
+main section.post {
+    padding: 50px;
+    width: 700px;
+}
+
+main section.post:hover, main section.aside section.related-posts:hover, main section.aside section.authors-profile:hover {
+    background: rgba(214, 211, 211, 0.767);
+    box-shadow: -1px -2px 206px 8px rgba(0,0,0,0.82);
+    -webkit-box-shadow: -1px -2px 206px 8px rgba(0,0,0,0.82);
+    -moz-box-shadow: -1px -2px 206px 8px rgba(0,0,0,0.82);
+}
+
+main section.post h2 {
+    font-size: 5rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+main section.post h3 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+    font-weight: 300;
+}
+
+main section.post img {
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+main section.post p {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+main section.aside {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 25px;
+}
+
+main section.aside section.related-posts h3 {
+    font-size: 2rem;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #070707;
+    color: #fafafa;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main section.aside section.related-posts h3:hover {
+    background-color: #070707ee;
+}
+
+main section.aside section.related-posts ol li a {
+    display: flex;
+    padding: 20px 0;
+}
+
+main section.aside section.related-posts div.posts-info {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.aside section.related-posts ol li img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+main section.aside section.related-posts ol li a:hover {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main section.aside section.related-posts ol li h4 {
+    align-self: top;
+    padding-left: 20px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+main section.aside section.related-posts div.posts-info p {
+    font-size: 1.5rem;
+    width: 75%;
+    margin: 10px 20px 0;
+}
+
+main section.aside div.authors-profile {
+    height: fit-content;
+    border-radius: 20px;
+}
+
+main section.aside section.authors-profile {
+    display: flex;
+    padding: 20px;
+}
+
+main section.aside section.authors-profile div.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+main section.aside section.authors-profile div.profile div.authors-social {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main section.aside section.authors-profile div.profile div.authors-social i {
+    font-size: 2rem;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+main section.aside section.authors-profile div.profile div.authors-social i:hover {
+    color: #fafafa;
+    background-color: #070707b6;
+    border-radius: 20px;
+}
+
+main section.aside section.authors-profile div.profile-info {
+    margin-left: 20px;
+}
+
+main section.aside section.authors-profile div.profile-info h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+main section.aside section.authors-profile div.profile-info p {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: justify;
+    width: 100%;
+}

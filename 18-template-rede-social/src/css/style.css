@@ -1,0 +1,329 @@
+body {
+    background-color: #0e0e0e;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav main aside";
+    margin: 20px 50px;
+    column-gap: 50px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 200px;
+}
+
+header img:hover {
+    animation: jello 2s ease 0s infinite normal forwards;
+}
+
+@keyframes jello {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+nav {
+    grid-area: nav;
+    width: fit-content;
+}
+
+nav ul li a {
+    display: flex;
+    margin: 0 0 15px;
+    border-bottom: 0.5px solid #fafafa;
+    padding: 10px;
+    transition: 0.7s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #FE1D01;
+    border: 0.5px solid #5172FF;
+    border-radius: 100px;
+}
+
+nav ul li a i, nav ul li a p {
+    font-size: 2rem;
+    padding-right: 10px;
+    align-self: center;
+}
+
+main {
+    grid-area: main;
+    width: 700px;
+}
+
+main section.new-post {
+    display: flex;
+    backdrop-filter: blur(25px) saturate(0%);
+    -webkit-backdrop-filter: blur(25px) saturate(0%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin-bottom: 20px;
+}
+
+main section.new-post div.profile-picture {
+    align-self: baseline;
+    margin: 30px 40px;
+    cursor: pointer;
+}
+
+main section.new-post div.profile-picture img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+main section.new-post div.profile-picture h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+main section.new-post div.profile-picture h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #616161;
+}
+
+main section.new-post div.text div.post-area textarea {
+    align-self: center;
+    margin: 20px 20px 20px 0px;
+    background-color: #0e0e0e;
+    border: 0px;
+    width: 500px;
+    height: 150px;
+    color: #fafafa;
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+main section.new-post div.text div.post-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 15px;
+    padding-bottom: 10px;
+    align-self: center;
+}
+
+main section.new-post div.text div.post-options div.post-options-items a i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    padding: 5px;
+    transition: 0.8s ease-in-out;
+}
+
+main section.new-post div.text div.post-options div.post-options-items a i:hover {
+    background-color: #5172FF;
+    border-radius: 20px;
+}
+
+main section.new-post div.text div.post-options div.btn a {
+    font-size: 2rem;
+    background-color: #FE1D01;
+    border: 0.5px solid #5172FF;
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.8s ease-in-out;
+}
+
+main section.new-post div.text div.post-options div.btn a:hover {
+    background-color: #5172FF;
+    border: 0.5px solid #FE1D01;
+}
+
+main section.timeline {
+    backdrop-filter: blur(25px) saturate(0%);
+    -webkit-backdrop-filter: blur(25px) saturate(0%);
+    background-color: rgba(5, 5, 5, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 30px;
+}
+
+main section.timeline div.post {
+    display: flex;
+    margin: 10px 0;
+    border-bottom: 0.5px solid #fafafa;
+    padding-bottom: 5px;
+}
+
+main section.timeline div.post div.timeline-profile-picture img {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    margin-right: 30px;
+}
+
+main section.timeline div.post div.post-info a {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+main section.timeline div.post div.post-info a h2 {
+    font-size: 2rem;
+    padding-right: 15px;
+}
+
+main section.timeline div.post div.post-info a h5 {
+    font-size: 1.1rem;
+    align-self: center;
+    color: #616161;
+}
+
+main section.timeline div.post div.post-info p {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+main section.timeline div.post div.post-info img {
+    width: 500px;
+    height: fit-content;
+    padding: 15px;
+    cursor: pointer;
+}
+
+main section.timeline div.post div.post-info div.interactions {
+    display: flex;
+    width: 30%;
+}
+
+main section.timeline div.post div.post-info div.interactions a i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    padding: 5px;
+    transition: 0.8s ease-in-out;
+}
+
+main section.timeline div.post div.post-info div.interactions a i:hover {
+    color: #5172FF;
+    background-color: #fe1f01a8;
+    border-radius: 20px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside div.search-bar {
+    background-color: #5172FF;
+    border-radius: 50px;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    padding: 5px;
+}
+
+aside div.search-bar label i {
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    transition: 0.5s ease-in-out;
+}
+
+aside div.search-bar label i:hover {
+    color: #FE1D01;
+    cursor: pointer;
+}
+
+aside div.search-bar input {
+    border-radius: 50px;
+    font-size: 1.8rem;
+    border: 0px;
+    background-color: #fafafa;
+    color: #0e0e0e;
+}
+
+aside div.trending {
+    backdrop-filter: blur(16px) saturate(0%);
+    -webkit-backdrop-filter: blur(16px) saturate(0%);
+    background-color: rgba(14, 14, 14, 0.93);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+aside div.trending h2 {
+    color: #0e0e0e;
+    background-color: #fafafab6;
+    text-transform: uppercase;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+aside div.trending h2:hover {
+    background-color: #5172FF;
+    color: #fafafa;
+}
+
+aside div.trending ul li a {
+    display: flex;
+    margin: 15px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #fafafa;
+    transition: 0.5s ease-in-out;
+}
+
+aside div.trending ul li a:hover {
+    opacity: 0.8;
+}
+
+aside div.trending ul li a div.trending-photo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+aside div.trending ul li a div.trending-info {
+    width: 80%;
+    align-self: center;
+}
+
+aside div.trending ul li a div.trending-info h4 {
+   font-size: 1.8rem;
+   padding-bottom: 10px;
+}
+
+aside div.trending ul li a div.trending-info p {
+    font-size: 1rem;
+ }

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: #070700;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}

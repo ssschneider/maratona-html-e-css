@@ -1,0 +1,81 @@
+body {
+    background: url('../images/background-grande.jpg') right center no-repeat;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 0;
+}
+
+header img.logo {
+    margin: 40px;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
+
+header a img.logo:hover {
+    opacity: 0.8;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    margin: 50px 100px 50px 20px;
+}
+
+main h2, main span {
+    font-size: 6rem;
+    margin-bottom: 50px;
+}
+
+main span {
+    color: #0F1110;
+    transition: 0.5s ease-in-out;
+}
+
+main span:hover {
+    color: #fff;
+}
+
+main p {
+    font-size: 2.5rem;
+    width: 50%;
+}
+
+main a {
+    font-size: 2rem;
+    padding: 15px;
+    background-color: #fff;
+    color: #0F1110;
+    border-radius: 50px;
+    width: fit-content;
+    transition: 0.5s ease-in-out;
+    margin: 30px 10px;
+}
+
+main a:hover {
+    opacity: 0.9;
+    background-color: #0F1110;
+    color: #fff;
+}
+
+footer div.social ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+footer div.social ul li a {
+    padding: 20px;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+footer div.social ul li a:hover {
+    opacity: 0.5;
+}

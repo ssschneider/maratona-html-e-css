@@ -1,0 +1,111 @@
+body {
+    background-color: #fcf7d3;
+}
+
+header h1 {
+    margin: 50px 135px;
+    font-size: 6rem;
+}
+
+main section.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 2px 1px 53px -7px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 2px 1px 53px -7px rgba(0,0,0,0.76);
+    -moz-box-shadow: 2px 1px 53px -7px rgba(0,0,0,0.76);
+    border-radius: 20px;
+}
+
+main section.container div.items {
+    width: fit-content;
+}
+
+main section.container div.items div.plan-title {
+    background-color: #c2f913;
+    font-size: 5rem;
+    padding: 10px;
+    line-height: 5rem;
+    border-top-left-radius: 20px;
+}
+
+main section.container div.items div.plan-title h2, main section.container div.items div.plan-title ul li {
+    padding-left: 10px;
+}
+
+main section.container div.items ul li {
+    font-size: 2rem;
+    padding: 10px;
+    border-bottom: 1px solid #070707;
+}
+
+main section.container div.items ul li:last-child {
+    border-bottom: none;
+}
+
+main section.container div.plan1 div.plan-title h2, main section.container div.plan2 div.plan-title h2, main section.container div.plan3 div.plan-title h2, main section.container div.plan1 div.plan-title p, main section.container div.plan2 div.plan-title p, main section.container div.plan3 div.plan-title p, main section.container div.items div.plan-title h2{
+    color: #fcf7d3;
+}
+
+main section.container div.plan1 div.plan-title, main section.container div.plan2 div.plan-title, main section.container div.plan3 div.plan-title {
+    padding: 10px;
+    text-align: center;
+}
+
+main section.container div.plan1 div.plan-title {
+    background-color: #aee60e;
+}
+
+main section.container div.plan2 div.plan-title {
+    background-color: #9ad30a;
+}
+
+main section.container div.plan3 div.plan-title {
+    background-color: #86c005;
+    border-top-right-radius: 20px;
+}
+
+main section.container div.plan1 div.plan-title h2, main section.container div.plan2 div.plan-title h2, main section.container div.plan3 div.plan-title h2 {
+    font-size: 3rem;
+}
+
+main section.container div.plan1 div.plan-title p, main section.container div.plan2 div.plan-title p, main section.container div.plan3 div.plan-title p {
+    font-size: 1.5rem;
+}
+
+main section.container div.plan1 ul, main section.container div.plan2 ul, main section.container div.plan3 ul {
+    text-align: center;
+}
+
+main section.container div.plan1 ul li i, main section.container div.plan2 ul li i, main section.container div.plan3 ul li i {
+    font-size: 2rem;
+    padding: 10px;
+    border-bottom: 1px solid #070707;
+    line-height: 4.5rem;
+    width: 75%;
+}
+
+
+main section.container ul li i.fa-check-circle {
+    color: #00FF00;
+}
+
+main section.container ul li i.fa-times-circle {
+    color: #FF0000;
+}
+
+main section.container div.plan1 ul li a, main section.container div.plan2 ul li a, main section.container div.plan3 ul li a {
+    font-size: 2.5rem;
+    padding: 10px 60px;
+    line-height: 5rem;
+    background-color: #f7345b;
+    color: #fcf7d3;
+    width: fit-content;
+    transition: 0.5s ease-in-out;
+}
+
+main section.container div.plan1 ul li a:hover, main section.container div.plan2 ul li a:hover, main section.container div.plan3 ul li a:hover {
+    opacity: 0.9;
+    color: #070707;
+}

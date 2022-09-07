@@ -1,0 +1,58 @@
+body {
+    background: url('../images/background-desktop.png') right center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+main div.section-header {
+    display: flex;
+    margin: 50px 80px;
+    padding: 10px;
+}
+
+main div.section-header h1 {
+    align-self: center;
+    padding: 15px;
+    font-size: 6rem;
+}
+
+main div.content {
+    margin-left: 80px;
+    width: 50%;
+    padding: 20px 20px 0px;
+    background-color: #373737;
+    border-radius: 20px;
+}
+
+main div.content h2 {
+    font-size: 6.5rem;
+    margin-bottom: 30px;
+    font-family: 'Cookie', cursive;
+}
+
+main div.content p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+main div.content form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+main div.content form input {
+    padding: 10px; 
+    border: 0px solid #000;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: #373737;
+    background-color: #FAEBD7;
+}
+
+main div.content form input#submit:hover {
+    background-color: #373737;
+    color: #FAEBD7;
+    border: 1px solid #FAEBD7;
+}
